@@ -1,3 +1,10 @@
+# Objectives
+- [ ] Creeu un document HTML vàlid amb una sintaxi vàlida. Només un body, un head, etc.
+- [ ] Utilitzar correctament els elementsHTML: h1-h6, button, a, nav, ul, li. fan un bon ús de l'HTML semàntic. 
+- [ ] La sintaxi es pot validar amb un HTML comprovat.
+- [ ] Replica el disseny de la millor manera possible en la seva mida "d'escriptori". feu un ús correcte dels colors de Tailwind, extreu les classes de components amb @apply (si cal)
+- [ ] Ús correcte de CSS grid i Flexbox quan sigui necessari (flexbox per a components, quadrícula per a la disposició, en general)
+
 # Front End - Projecte 1
 
 Escull un dels següents dissenys de pàgina web per composar-lo fent servir els coneixements d'HTML i CSS que hem après en les darreres dues setmanes:
