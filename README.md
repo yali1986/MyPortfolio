@@ -8,6 +8,8 @@
 # Front End - Projecte 1
 
 Escull un dels següents dissenys de pàgina web per composar-lo fent servir els coneixements d'HTML i CSS que hem après en les darreres dues setmanes:
+El proyecto escogido por mí: 
+https://www.figma.com/design/aTHEjq0UfirHcB1Fv9EvBl/Personal-Portfolio-Website-Template-(Community)?node-id=0-1&node-type=canvas&t=5TGVBmLF1hLADq7O-0
 
 | **Títol**                        | **Enllaç**                                               |
 | -------------------------------- | -------------------------------------------------------- |

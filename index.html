@@ -5,14 +5,141 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projecte 1</title>
+  <title>Projecte 1:Personal Portfolio Website</title>
   <link href="output.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="bg-[#F9FAFF]">
+<header>
+  <nav class="flex justify-between pt-2">   
+   
+    <div class="w-1/2 pl-20">       
+         <h5>Madelyn Torff</h5>         
+    </div>
+   
+    <div class="flex space-x-10 w-1/2 justify-center ml-96">    
+      <a href="about.html">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </div>
+ 
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="my-14 pl-20">
+
+    <p class="uppercase text-primary font-semibold mb-3">UI/UX designer</p>
+    <div class="flex justify-between">
+    <div class="w-1/3">
+     <h2 class="text-5xl font-semibold text-secundary">Hello, my name</h2>
+     <h2 class="text-5xl font-semibold text-secundary py-5">is Madelyn Torff</h2>
+     <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste earum id, sit at vero repellat labore nesciunt ab ad ea fugit iure dolore voluptatum?</p>
+    </div>
+
+    <div class="w-1/2 -mt-32 -z-10">
+<img src="./assets/image.png" alt="profile photo"/>
+    </div>
+  </div>
+
+</div>
+  </section class="pb-10">
+
+  <section id="projects" class="flex items-center justify-center flex-col">
+    <h2 class="font-bold text-secundary self-center flex text-4xl mt-1 mb-3">Projects</h2>
+    <div class="h-[3px] bg-primary w-[80px] mb-14 rounded-full"></div>
+<!-- Card1 -->
+    <div class="card flex w-2/3 mb-10 rounded-lg bg-white overflow-hidden">
+<div class="flex flex-col w-1/2 justify-center px-12">
+  <h3 class="font-bold text-secundary">Project Name</h3>
+  <p class="color-p my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam, reiciendis sit consectetur quos maiores.</p>
+  <div class="flex">
+  <button class="border border-black rounded-full mt-2 px-4 py-1">
+    <p class="font-semibold">View Project</p>
+  </button>
+</div>
+</div>
+    
+ <img src="./assets/pexels-elly-fairytale-3823207 1.png" alt="Photo of my exercicies proyect yoga" class="h-auto w-1/2">
+    </div>
+<!-- Card2 -->
+    <div class="card flex flex-row-reverse w-2/3 mb-10 rounded-lg bg-white overflow-hidden">
+<div class="flex flex-col w-1/2 justify-center px-12">
+  <h3 class="font-bold text-secundary">Project Name</h3>
+  <p class="color-p my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam, reiciendis sit consectetur quos maiores.</p>
+  <div class="flex">
+  <button class="border border-black rounded-full mt-2 px-4 py-1">
+    <p class="font-semibold">View Project</p>
+  </button>
+</div>
+</div>
+    
+ <img src="./assets/Rectangle 7.png" alt="Photo of my exercicies proyect yoga" class="h-auto w-1/2">
+    </div>
+
+<!-- Card3 -->
+<div class="card flex w-2/3 mb-6 rounded-lg bg-white overflow-hidden">
+  <div class="flex flex-col w-1/2 justify-center px-8">
+    <h3 class="font-bold text-secundary">Project Name</h3>
+    <p class="color-p my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam, reiciendis sit consectetur quos maiores.</p>
+    <div class="flex">
+      <button class="border border-black rounded-full mt-2 px-4 py-1">
+        <p class="font-semibold">View Project</p>
+      </button>
+    </div>
+  </div>
+  
+  <img src="./assets/Rectangle 7 (1).png" alt="Photo of my exercises project yoga" class="h-auto w-1/2">
+</div>
+
+  </section>
+
+  <section id="contacts" class="flex items-center justify-center flex-col">
+    <h2 class="font-bold text-secundary self-center flex text-4xl mb-3 mt-14">Projects</h2>
+    <div class="h-[3px] bg-primary w-[80px] mb-14 rounded-full"></div>
+
+    <Form action="form.html" class="space-y-4 w-1/3">
+
+      <div class="flex flex-col">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required class="border border-[#E8ECF4] rounded-md">
+      </div>
+      <div class="flex flex-col">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required class="border border-[#E8ECF4] rounded-md">
+      </div>
+      
+
+      <div>
+          <div>
+              <label for="comment">Message</label>
+          </div>
+          <textarea name="comment" id="comment" rows="4" class="border border-[#E8ECF4] rounded-md w-full"></textarea>
+      </div>
+
+      <div class="flex justify-end">
+        <button type="submit" class="bg-primary px-6 py-2 rounded-md font-semibold mb-10">Send</button>
+    </div>  
+
+  </Form>
+
+  <div class="flex space-x-8 my-6">
+<img src="./assets/icons/instagram.png" alt="Instagram icon">
+<img src="./assets/icons/Linkedin.png" alt="Linkedin icon">
+<img src="./assets/icons/email.png" alt="email icon">
+  </div>
+  <div class="mb-6">
+    <p class="color-p">Madelin Torff 2021</p>
+  </div>
+  </section>
+</main>
+<footer class="h-10">
+  <img src="./assets/Vector.png" alt="background para fondo de color amarillo">
+</footer>
 
 </body>
 

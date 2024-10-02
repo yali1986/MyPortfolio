@@ -3,4 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  
+     .color-p {
+        @apply text-[#828282];
+     }
+    
 }
