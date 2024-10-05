@@ -19,23 +19,26 @@
 
 <body class="bg-[#F9FAFF]">
   <header>
-    <nav id="navabout" class="flex justify-between pt-2">
-      <div class="w-1/2 pl-20">
-        <a href="index.html">
-          <h5>Madelyn Torff</h5>
-        </a>
-      </div>
+    <nav id="nav" class="flex pt-2">
 
-      <div class="flex space-x-10 w-1/2 justify-center ml-96">
+      <div class="w-1/2 pl-5 md:pl-20 xl:pl-40 pt-2">
+        <a href="index.html">Madelyn Torff</a>
+      </div>
+ 
+      <div class="space-x-10 w-1/2 justify-center ml-72 hidden md:flex md:pr-5">
         <div>
           <a>About</a>
           <div class="h-[3px] bg-secundary w-[40px] rounded-full"></div>
         </div>
-
         <a href="index.html#projects">Projects</a>
         <a href="index.html#contacts">Contacts</a>
       </div>
 
+      <div class="space-x-10 w-1/2 justify-end flex md:hidden mr-1 sm:mr-4 mt-2" >
+       <button class="items-center rounded overflow-hidden">
+       <img src="./assets/icons/menu collapse.png">
+       </button>
+      </div>
     </nav>
   </header>
 
