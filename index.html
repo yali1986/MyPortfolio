@@ -20,17 +20,26 @@
         <a href="index.html">Madelyn Torff</a>
       </div>
  
-      <div class="space-x-10 w-1/2 justify-center ml-72 hidden md:flex md:pr-5">
+      <div id="menu" class="space-x-10 w-1/2 justify-center ml-72 hidden md:flex md:pr-5">
         <a href="about.html">About</a>
         <a href="#projects">Projects</a>
         <a href="#contacts">Contacts</a>
       </div>
 
+      <!-- menu hamburger small screens -->
       <div class="space-x-10 w-1/2 justify-end flex md:hidden mr-1 sm:mr-4 mt-2" >
-       <button class="items-center rounded overflow-hidden">
+       <button id="hamburger" class="items-center rounded overflow-hidden">
        <img src="./assets/icons/menu collapse.png">
        </button>
       </div>
+
+      <!-- dropdown menu on small screens -->
+  <div id="mobile-menu" class="hidden md:hidden flex-col items-start space-y-4 pl-5 mt-2">
+    <a href="about.html">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contacts">Contacts</a>
+  </div>
+
     </nav>
   </header>
 
@@ -38,14 +47,15 @@
     <section>
       <div class="pl-5 md:pl-20 xl:pl-40">
         <div class="flex justify-center sm:justify-between">
-          <div class="flex flex-col w-full sm:w-1/2">
-            <p class="uppercase text-primary font-semibold mb-3 mt-4 lg:mt-4 self-center sm:self-start">UI/UX designer</p>
+          <div class="flex flex-col w-full md:w-1/2">
+            <p class="uppercase text-primary font-semibold mb-3 mt-4 lg:mt-4 self-center md:self-start">UI/UX designer</p>
             <div class="flex">
               <div>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-secundary font-lora text-center sm:text-left">Hello, my name</h2>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-secundary py-5 font-lora text-center sm:text-left">is Madelyn Torff</h2>
-                <div class="w-full flex sm:hidden items-center justify-center">
-                  <img src="./assets/image.png" alt="profile photo" class="h-auto w-full">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-secundary font-lora text-center md:text-left">Hello, my name</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-secundary py-5 font-lora text-center md:text-left">is Madelyn Torff</h2>
+
+                <div class="w-full flex md:hidden items-center justify-center mb-6">
+                  <img src="./assets/image.png" alt="profile photo" class="h-auto w-full xs:w-2/3">
                 </div>
                 <p class="color-p w-full md:w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste
                   earum id, sit at vero repellat labore nesciunt ab ad ea fugit iure dolore voluptatum?</p>
@@ -61,12 +71,10 @@
               </div>
             </div>
 
-          </div>
+          </div>         
 
-         
-
-          <div class=" -mt-16 md:-mt-12 -z-10 hidden sm:flex sm:flex-grow sm:overflow-hidden sm:w-[780px]">
-            <img src="./assets/image.png" alt="profile photo" class="flex sm:flex-grow sm:w-[580px] sm:h-[450px] lg:w-auto lg:h-auto"/>
+          <div class=" -mt-16 md:-mt-12 -z-10 hidden md:flex sm:overflow-hidden">
+            <img src="./assets/image.png" alt="profile photo" class="flex sm:flex-grow md:w-[620px] sm:h-[450px] lg:w-auto lg:h-auto"/>
           </div>
         </div>
 
@@ -125,7 +133,7 @@
       <h2 class="font-bold text-secundary self-center flex text-2xl md:text-4xl lg:text-5xl mb-2 mt-10 font-lora">Projects</h2>
       <div class="h-[3px] bg-primary w-[80px] mb-10 rounded-full"></div>
 
-      <Form action="form.html" class="space-y-4 w-full p-12 md:w-2/3 md:p-6 lg:w-1/2">
+      <Form action="form.html" class="space-y-4 p-8 xs:p-16 w-full sm:w-3/4 md:w-2/3 md:p-6 lg:w-1/2">
 
         <div class="flex flex-col">
           <label for="name">Name</label>
@@ -144,8 +152,8 @@
           <textarea name="comment" id="comment" rows="4" class="border border-[#E8ECF4] rounded-md w-full"></textarea>
         </div>
 
-        <div class="flex justify-end">
-          <button type="submit" class="bg-primary px-6 py-2 rounded-md font-semibold mb-10">Send</button>
+        <div class="flex justify-center md:justify-end">
+          <button type="submit" class="bg-primary px-6 py-2 rounded-md font-semibold md:mb-10">Send</button>
         </div>
 
       </Form>
@@ -174,6 +182,16 @@
   <footer class="flex flex-grow">
     <img src="./assets/Vector.png" alt="background para fondo de color amarillo" class="flex flex-grow">
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+  </script>
 
 </body>
 
