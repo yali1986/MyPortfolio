@@ -6,5 +6,17 @@
      .color-p {
         @apply text-[#828282];
      }
+     .gran-text {
+      @apply text-3xl md:text-4xl lg:text-5xl font-semibold text-secundary font-lora text-center md:text-left;
+     }
+     .project-name {
+      @apply font-bold text-secundary flex text-2xl lg:text-4xl mb-3 font-lora self-center sm:self-start;
+     }
+     .button-view {
+      @apply font-semibold border border-black rounded-full mt-2 px-4 py-1;
+     }
+     .button-yelow {
+      @apply bg-primary px-6 py-2 rounded-md font-semibold ;
+     }   
     
 }
