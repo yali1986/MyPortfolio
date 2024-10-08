@@ -932,6 +932,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80px;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -958,10 +962,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-2 {
   width: 0.5rem;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .flex-shrink {
@@ -1082,6 +1082,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-t-full {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 .border {
@@ -1427,6 +1445,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 3.5rem;
   }
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:mt-28 {
     margin-top: 7rem;
   }
@@ -1465,6 +1488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[620px\] {
     width: 620px;
+  }
+
+  .md\:w-full {
+    width: 100%;
   }
 
   .md\:flex-row {
@@ -1524,12 +1551,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 2.5rem;
   }
 
-  .lg\:mt-28 {
-    margin-top: 7rem;
-  }
-
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .lg\:mt-28 {
+    margin-top: 7rem;
   }
 
   .lg\:h-auto {

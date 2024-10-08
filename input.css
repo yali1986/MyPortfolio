@@ -16,7 +16,7 @@
       @apply font-semibold border border-black rounded-full mt-2 px-4 py-1;
      }
      .button-yelow {
-      @apply bg-primary px-6 py-2 rounded-md font-semibold ;
+      @apply bg-primary px-6 py-2 rounded-md font-semibold;
      }   
     
 }
