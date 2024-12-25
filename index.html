@@ -5,101 +5,212 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projecte 1:Personal Portfolio Website</title>
+  <title>Personal Portfolio Website</title>
   <link href="output.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-[#F9FAFF]">
+<body>
   <header>
-    <nav id="nav" class="flex pt-2">
+    <nav id="navhome" class="flex justify-between mt-1 mb-4 py-2 bg-secundary text-white">
+      <div class="ml-9">
+        <p class="text-primary text-xl tracking-widest">My Portfolio</p>
+      </div>
 
-      <div class="w-1/2 pl-5 md:pl-20 xl:pl-40 pt-2">
-        <p>Madelyn Torff</p>
-      </div>
- 
-      <div id="menu" class="space-x-10 w-1/2 justify-center ml-72 hidden md:flex md:pr-5">
+      <div id="menu" class=" hidden md:flex gap-6 mr-6">
         <a href="about.html">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
+        <a href="#projects" class="text-primary text-xl">More Projects</a>
+        <a href="#contacts">Contact</a>
       </div>
+
 
       <!-- menu hamburger small screens -->
-      <div class="space-x-10 w-1/2 justify-end flex md:hidden mr-1 sm:mr-4 mt-2" >
-       <button id="hamburger" class="items-center rounded overflow-hidden">
-       <img src="./assets/icons/menu-collapse.webp" alt="menu collapse icon" aria-label="menu navbar">
-       </button>
+      <div class="space-x-10 w-1/2 justify-end flex md:hidden mr-1 sm:mr-4 mt-2">
+        <button id="hamburger" class="items-center rounded overflow-hidden">
+          <img src="./assets/icons/menu-collapse.webp" alt="menu collapse icon" aria-label="menu navbar">
+        </button>
       </div>
 
       <!-- dropdown menu on small screens -->
-  <div id="mobile-menu" class="hidden md:hidden flex-col items-start space-y-4 pl-5 mt-2">
-    <a href="about.html">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contacts">Contacts</a>
-  </div>
-
+      <div id="mobile-menu" class="hidden md:hidden flex-col items-start space-y-4 pl-5 mt-2">
+        <a href="about.html">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section>
-      <div class="pl-5 md:pl-20 xl:pl-40">
+    <section class="bg-white pl-4 mt-6">     
         <div class="flex justify-center sm:justify-between">
-          <div class="flex flex-col w-full md:w-1/2">
-            <h1 class="uppercase text-primary font-semibold mb-3 mt-4 lg:mt-4 self-center md:self-start">UI/UX designer</h1>
-            
-              <div>
-                <h2 class="gran-text">Hello, my name</h2>
-                <h2 class="gran-text mb-6">is Madelyn Torff</h2>
+          <!-- left section -->
+          <div class="bg-primary w-2/3 rounded-b-md rounded-tr-md py-1">
+            <h2 class="text-[8px] ps-2 bg-primary -mt-4 rounded-t-md w-1/3 py-1">Look my best projects</h2>
+          <div class="flex flex-col mt-2 px-2">
+            <div class="flex justify-stretch">
+            <button class="border border-white rounded-t-md px-2 bg-white text-xs" id="vueButton">Vue.js 3</button>
+            <button class="border border-white rounded-t-md px-2 ml-6 text-xs" id="react1Button">React</button>       
+            <button class="border border-white rounded-t-md px-2 ml-6 text-xs" id="react2Button">React</button>
+          </div>
+           <!-- vue Project -->
+            <div class="bg-white rounded-b-md rounded-tr-md py-2 px-2 mb-1 max-w-96 flex" id="vueProyect">
+              <div class="w-72 h-60 border border-primary">
+                <img src="./assets/Proyect EvenTop.png" class="w-full h-full object-contain">
+              </div>
 
-                <div class="w-2/3 flex md:hidden justify-center mb-6 mx-auto rounded-r-full overflow-hidden">
-                  <img src="./assets/image.webp" alt="profile photo" class="h-auto w-full self-center">
+              <div class="flex flex-col gap-2 mx-auto items-center ml-2 flex-grow-0">                
+                <a href="https://github.com/codeopteam/team2" target="_blank">
+                  <img src="./assets/icons/logotipo-de-github.png" alt="Github icon" class="w-6 self-center mt-1">
+                </a>
+                <a href="https://eventop-codeop.web.app/" target="_blank" class="bg-white border border-primary rounded-md px-7 text-xs">url</a>
+                <ul class="text-xs flex flex-col text-center">
+                <div class="border border-primary px-1 rounded-md">
+                  <li>Eventbrite</li>
+                  <li>Api</li>
                 </div>
-                <div>
-                <p class="color-p w-2/3 flex text-center md:text-left mx-auto md:mx-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste
-                  earum id, sit at vero repellat labore nesciunt ab ad ea fugit iure dolore voluptatum?</p>
+                  <li class="my-2 border border-primary px-1 rounded-md">Pinia</li>
+                  <li class="border border-primary px-1 rounded-md">Firebase</li>     
+                <div class="border border-primary px-1 rounded-md my-2">           
+                  <li>OpenStreet</li>
+                  <li>Map</li>
+                </div>
+                <li class="border border-primary px-1 rounded-md mb-2">Tailwind</li> 
+                <li class="border border-primary px-1 rounded-md">Teamwork</li>
+                </ul>
+              </div>
+            </div>   
+             <!-- Fin vue Project -->
+
+            <!-- react Project1 -->
+            <div class="bg-white rounded-b-md rounded-tr-md py-2 px-2 mb-1 max-w-96 flex hidden" id="reactProyect1">
+              <div class="w-72 h-60 border border-primary flex justify-center">
+                <img src="./assets/React1.png" class="w-full h-full object-contain">
               </div>
 
-            </div>
-            <div class="flex space-x-4 justify-center md:justify-start">
-              <div class="my-8">
-                <a href="#projects" class="button-yelow">Projects</a>
+              <div class="flex flex-col gap-2 mx-auto items-center ml-2 flex-grow-0">                
+                <a href="https://github.com/yali1986/Adopciones-de-mascotas.git" target="_blank">
+                  <img src="./assets/icons/logotipo-de-github.png" alt="Github icon" class="w-6 self-center mt-1">
+                </a>
+                <a href="https://adopciones-de-mascotas-8wq8qccus-yalis-projects-cd883604.vercel.app" target="_blank" class="bg-white border border-primary rounded-md px-7 text-xs">url</a>
+                <ul class="text-xs flex flex-col text-center">
+                <div class="border border-primary px-1 rounded-md">
+                  <li>Emailjs</li>                
+                </div>
+                  <li class="my-2 border border-primary px-1 rounded-md">Context</li>
+                  <li class="border border-primary px-1 rounded-md">Firebase</li>     
+                <div class="border border-primary px-1 rounded-md my-2">           
+                  <li>i18next</li>
+                  
+                </div> 
+                <li class="border border-primary px-1 rounded-md">Bootstrap</li>
+                </ul>
               </div>
-              <div class="my-8">
-                <a href="#" class="bg-white border border-secundary button-yelow">LinkedIn</a>
-              </div>
-            </div>
-          
+            </div>   
+            <!-- Fin react Project1 -->
+
+              <!-- react Project2 -->
+              <div class="bg-white rounded-b-md rounded-tr-md py-2 px-2 mb-1 max-w-96 flex hidden" id="reactProyect2">
+                <div class="w-72 h-60 border border-primary">
+                  <img src="./assets/React2.png" class="w-full h-full object-contain">
+                </div>
+  
+                <div class="flex flex-col gap-2 mx-auto items-center ml-2 flex-grow-0">                
+                  <a href="https://github.com/yali1986/tasca-S6.Pressupostos" target="_blank">
+                    <img src="./assets/icons/logotipo-de-github.png" alt="Github icon" class="w-6 self-center mt-1">
+                  </a>
+                  <a href="https://tasca-s6-pressupostos.vercel.app" target="_blank" class="bg-white border border-primary rounded-md px-7 text-xs">url</a>
+                  <ul class="text-xs flex flex-col text-center">
+                  
+                    <li class="my-2 border border-primary px-1 rounded-md">React-router-dom</li>
+                    <li class="border border-primary px-1 rounded-md">Data .json</li>     
+                  <div class="border border-primary px-1 rounded-md my-2">           
+                    <li>css</li>                
+                  </div> 
+                  <li class="border border-primary px-1 rounded-md">Layout responsive</li>
+                  </ul>
+                </div>
+              </div>   
+              <!-- Fin react Project2 -->
 
           </div>         
-
-          <div class=" -mt-16 md:-mt-12 -z-10 hidden md:flex sm:overflow-hidden">
-            <img src="./assets/image.webp" alt="profile photo" class="flex sm:flex-grow md:w-[620px] sm:h-[450px] lg:w-auto lg:h-auto"/>
           </div>
+          <!-- left section -->
+          <!-- Right Section  -->
+          <div class="flex flex-col w-full ml-10">
+
+            <div class="flex justify-between">
+              <div class="flex flex-col">
+                <h1 class="text-primary font-semibold lg:mt-4 self-center md:self-start text-xl">Front-end</h1>
+                <h1 class="text-primary font-semibold mb-3 self-center md:self-start text-xl">Web
+                  Developer
+                </h1>
+
+                <div>
+                  <h2 class="text-xl font-semibold font-lora">Hello, my name</h2>
+                  <h2 class="text-xl font-semibold font-lora mb-4">is Yalina Gómez</h2>
+                </div>
+              </div>
+
+              <div class="hidden md:flex sm:overflow-hidden w-full md:w-1/3">
+                <img src="./assets/perfil5.png" alt="Profile photo" />
+              </div>
+
+              <div class="w-2/3 flex md:hidden justify-center mb-6 mx-auto rounded-r-full overflow-hidden">
+                <img src="./assets/perfil5.png" alt="profile photo" class="h-auto w-1/2 self-center">
+              </div>
+
+            </div>
+            <div>
+              <p class="color-p w-2/3 flex text-center md:text-left mx-auto md:mx-0 -mt-8">I am creative, communicative, productive, disciplined, constant and in search of new team challenges. </p>
+            </div>
+
+
+            <div class="flex justify-center md:justify-start mt-4 w-30 gap-2">              
+              
+              <div>
+                <a href="#projects" class="button-yelow text-[8px] py-2">Others Projects</a>
+              </div>
+              <div>
+                <a href="https://github.com/yali1986" class="bg-white border border-secundary button-yelow text-[8px] py-2"
+                  target="_blank">Github</a>
+              </div>
+              <div>
+                <a href="./assets/docs/Currículum Desarrolladora Web Front End bAndW.pdf.pdf" class="button-yelow text-[8px] py-2" target="_blank" 
+                download="Mi-CV.pdf">Download my CV</a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/yalinag%C3%B3mez-frontend-developer/?originalSubdomain=es"
+                  class="bg-white border border-secundary button-yelow text-[8px] py-2" target="_blank">Linkedin</a>
+              </div>
+            </div>
+          </div>  
+           <!-- Fin Right Section  -->      
         </div>
+      </div>    
+    </section>
 
-      </div>
-    </section class="pb-10">
-
-    <section id="projects" class="flex items-center justify-center flex-col">
-      <h2 class="font-bold text-secundary self-center flex text-2xl md:text-4xl lg:text-5xl mt-10 mb-3 font-lora">Projects</h2>
-      <div class="h-[3px] bg-primary w-[80px] mb-4 md:mb-8 rounded-full" aria-hidden="true"></div>
+    <section id="projects" class="flex items-center justify-center flex-col bg-[#F9FAFF]">
+      <h2 class="font-bold text-secundary self-center flex text-2xl md:text-4xl lg:text-5xl mt-10 mb-3 font-lora">
+        Others Projects</h2>
+      <div class="h-[3px] bg-primary w-[180px] mb-4 md:mb-8 rounded-full" aria-hidden="true"></div>
       <!-- Card1 -->
-      <div class="card flex flex-col sm:flex-row md:w-2/3 m-4 lg:mb-10 rounded-lg overflow-hidden">
-        <div class="flex flex-col w-full sm:w-1/2 justify-start sm:justify-center p-8 bg-white">
+      <div class="card flex flex-col sm:flex-row md:w-2/3 m-4 sm:mb-10 rounded-lg bg-white overflow-hidden">
+        <div class="flex flex-col w-full sm:w-1/2 justify-start sm:justify-center p-8">
           <h3 class="project-name">Project 1 Name</h3>
           <p class="color-p my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam, reiciendis
             sit consectetur quos maiores.</p>
           <div class="flex self-center sm:self-start mt-3">
-            <a href="project1.html" class="button-view">View
+            <a href="project3.html" class="button-view">View
               Project</a>
           </div>
         </div>
+
         <img src="./assets/pexels-elly-fairytale-3823207-1.webp" alt="Photo of my exercicies proyect yoga"
           class="h-auto self-center w-2/3 sm:w-1/2 rounded-lg">
       </div>
+
       <!-- Card2 -->
       <div class="card flex flex-col sm:flex-row-reverse md:w-2/3 m-4 sm:mb-10 rounded-lg bg-white overflow-hidden">
         <div class="flex flex-col w-full sm:w-1/2 justify-start sm:justify-center p-8">
@@ -111,7 +222,8 @@
               Project</a>
           </div>
         </div>
-        <img src="./assets/Rectangle-7-_1_.webp" alt="calendar photo" class="h-auto self-center w-2/3 sm:w-1/2 rounded-lg">
+        <img src="./assets/Rectangle-7-_1_.webp" alt="calendar photo"
+          class="h-auto self-center w-2/3 sm:w-1/2 rounded-lg">
       </div>
 
       <!-- Card3 -->
@@ -126,79 +238,46 @@
           </div>
         </div>
 
-        <img src="./assets/Rectangle-7-_1_.webp" alt="mobile phone photo" class="h-auto self-center w-2/3 sm:w-1/2 rounded-lg">
+        <img src="./assets/Rectangle 7.png" alt="calendar photo"
+          class="h-auto self-center w-2/3 sm:w-1/2 rounded-lg">
       </div>
 
     </section>
 
     <section id="contacts" class="flex items-center justify-center flex-col">
-      <h2 class="font-bold text-secundary self-center flex text-2xl md:text-4xl lg:text-5xl mb-2 mt-10 font-lora">Projects</h2>
-      <div class="h-[3px] bg-primary w-[80px] mb-10 rounded-full"></div>
+      <h2 class="font-bold text-secundary self-center flex text-2xl md:text-2xl lg:text-5xl mb-2 mt-10 font-lora">
+        Contact </h2>
+      <div class="h-[3px] bg-primary w-[80px] mb-6 rounded-full"></div>
 
-      <Form action="form.html" class="space-y-4 p-8 xs:p-16 w-full sm:w-3/4 md:w-2/3 md:p-6 lg:w-1/2">
-
-        <div class="flex flex-col">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required class="border border-[#E8ECF4] rounded-md">
-        </div>
-        <div class="flex flex-col">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required class="border border-[#E8ECF4] rounded-md">
-        </div>
-
-
-        <div>
-          <div>
-            <label for="comment">Message</label>
-          </div>
-          <textarea name="comment" id="comment" rows="4" class="border border-[#E8ECF4] rounded-md w-full"></textarea>
-        </div>
-
-        <div class="flex justify-center md:justify-end">
-          <button type="submit" class="button-yelow">Send</button>
-        </div>
-
-      </Form>
+      <h2 class="text-xl font-semibold font-lora">yalinita1985@gmail.com</h2>
 
       <div class="flex space-x-8 my-6">
-        <a href="#">
-          <img src="./assets/icons/instagram.png" alt="Instagram icon">
+
+        <a href="https://www.linkedin.com/in/yalinag%C3%B3mez-frontend-developer/?originalSubdomain=es" target="_blank">
+          <img src="./assets/icons/linkeding2.jpg" alt="Linkedin icon" class="w-12">
         </a>
-        <a href="#">
-          <img src="./assets/icons/Linkedin.webp" alt="Linkedin icon">
+        <a href="https://github.com/yali1986" target="_blank">
+          <img src="./assets/icons/logotipo-de-github.png" alt="Github icon" class="w-10">
         </a>
-        <a href="#">
-          <img src="./assets/icons/email.png" alt="email icon">
-        </a>
+
       </div>
-      <div class="mb-6">
-        <p class="color-p">Madelin Torff 2021</p>
+      <div>        
+          <p class="color-p">Yalina Gómez</p>        
       </div>
+
+     <div class="my-4 flex justify-center z-10">      
+      <a href="#navhome" class="bg-white border border-secundary px-4 py-2 rounded-full">↑</a>
+    </div> 
     </section>
 
-    <div class="my-8 flex justify-center">
-      <a href="#nav" class="bg-white border border-secundary px-6 py-2 rounded-md">↑</a>
-    </div>
+    
   </main>
 
-  <footer class="flex flex-grow">
+  <footer class="flex flex-grow -mt-24 -z-10">
     <img src="./assets/Vector.webp" alt="wavy figure as yellow background" aria-hidden="true" class="flex flex-grow">
   </footer>
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu'); 
-    
-  
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-      mobileMenu.classList.toggle('flex');
-      // El método toggle de classList en JavaScript agrega una clase si no está presente 
-      //y la elimina si ya está presente. Esto es útil para alternar entre dos estados, 
-      //como mostrar u ocultar un elemento.
-    });
-  </script>
-
+ 
+<script src="index.js"></script>
 </body>
 
 </html>

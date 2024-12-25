@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#FDC435',
-        secundary: '#333333',         
+        secundary: '#333333',             
       },
       fontFamily: {
         lora: ['Lora', 'serif'],
