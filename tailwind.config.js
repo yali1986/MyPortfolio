@@ -6,11 +6,12 @@ module.exports = {
         primary: '#FDC435',
         secundary: '#333333',             
       },
-      fontFamily: {
+            fontFamily: {
         lora: ['Lora', 'serif'],
       },
       screens: {
         'xs': '320px',
+        'custom-md': { min: '920px', max: '1023px' },
       },
     },
   },
