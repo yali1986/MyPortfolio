@@ -118,32 +118,44 @@
               <button class="border border-white rounded-t-md px-2 ml-10 text-xl" id="react2Button">React</button>
             </div>
             <!-- vue Project -->
-            <div class="bg-white rounded-b-md rounded-tr-md py-2 px-2 flex" id="vueProyect">
+            <div class="bg-white rounded-b-md rounded-tr-md py-2 px-2 flex lg:flex-col xl:flex-row" id="vueProyect">
               <div class="mt-4 ms-4 h-96">
-                <img src="./assets/Proyect EvenTop2.png" class="object-contain max-h-96">
+                <img src="./assets/Proyect EvenTop2.png" class="object-contain max-h-96 mx-auto">
               </div>
 
-              <div class="flex flex-col gap-2 mx-auto items-center ml-2 flex-grow-0 w-2/5">
-                <a href="https://github.com/codeopteam/team2" target="_blank">
-                  <img src="./assets/icons/logotipo-de-github.png" alt="Github icon" class="w-10 self-center my-2">
-                </a>
-                <a href="https://eventop-codeop.web.app/" target="_blank"
-                  class="bg-white border border-primary rounded-md px-7 text-xl">url</a>
-                <ul class="text-xl flex flex-col text-center">
-                  <div class="border border-primary px-1 rounded-md my-2">
+              <!-- BUTTONS -->
+              <div class="flex flex-col lg:flex-row xl:flex-col gap-2 mx-auto items-center ml-2 w-2/5 lg:w-full xl:w-2/5 lg:mt-4 flex-shrink">       
+               
+
+                <ul class="xl:text-xl flex flex-col lg:flex-row xl:flex-col text-center lg:items-start xl:items-center gap-1">
+                  
+                  <li class="self-center lg:-mt-2">
+                  <a href="https://github.com/codeopteam/team2" target="_blank">
+                   <img src="./assets/icons/logotipo-de-github.png" alt="Github icon" class="w-10 self-center">                
+                 </a>
+                 </li>
+
+                 <li class="self-center mt-2 lg:-mt-2 xl:mt-2">
+                  <a href="https://eventop-codeop.web.app/" target="_blank"
+                  class="bg-white border border-black rounded-md px-7 text-xl">url</a>
+                </li>
+                  <div class="border border-primary px-1 rounded-md mt-2">                    
                     <li class="px-2">Ticketmaster Api</li>
                     <!-- <li>Api</li> -->
                   </div>
-                  <li class="my-2 border border-primary px-1 rounded-md text-xl">Pinia</li>
-                  <li class="border border-primary px-1 rounded-md text-xl  my-2">Firebase</li>
-                  <div class="border border-primary px-1 rounded-md mt-2 text-xl">
+                  <li class="border border-primary px-1 rounded-md xl:text-xl mt-2">Pinia</li>
+                  <li class="border border-primary px-1 rounded-md xl:text-xl mt-2">Firebase</li>
+                  <div class="border border-primary px-1 rounded-md mt-2 xl:text-xl">
                     <li>OpenStreet</li>
                     <li>Map</li>
                   </div>
-                  <li class="border border-primary px-1 rounded-md my-4 text-xl">Tailwind</li>
-                  <li class="border border-primary px-1 rounded-md text-xl">Teamwork</li>
+                  <div class="flex lg:flex gap-1 xl:flex-col">
+                  <li class="border border-primary px-1 rounded-md xl:text-xl mt-2">Tailwind</li>
+                  <li class="border border-primary px-1 rounded-md xl:text-xl mt-2">Teamwork</li>
+                </div>
                 </ul>
               </div>
+               <!-- END BUTTONS -->
             </div>
             <!-- End vue Project -->
 
@@ -173,7 +185,7 @@
                 </ul>
               </div>
             </div>
-            <!-- Fin react Project1 -->
+            <!-- End react Project1 -->
 
             <!-- react Project2 -->
             <div class="bg-white rounded-b-md rounded-tr-md py-2 px-2 flex hidden" id="reactProyect2">
@@ -198,7 +210,7 @@
                 </ul>
               </div>
             </div>
-            <!-- Fin react Project2 -->
+            <!-- End react Project2 -->
 
           </div>
         </div>
