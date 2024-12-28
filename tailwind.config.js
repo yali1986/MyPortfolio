@@ -11,7 +11,7 @@ module.exports = {
       },
       screens: {
         'xs': '320px',
-        'custom-md': { min: '920px', max: '1023px' },
+        'custom-md': { min: '704px', max: '1023px' },
       },
     },
   },
