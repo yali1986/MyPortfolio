@@ -13,7 +13,7 @@
       @apply font-bold text-secundary flex text-2xl lg:text-4xl mb-3 font-lora self-center sm:self-start;
      }
      .button-view {
-      @apply font-semibold border border-black rounded-full mt-2 px-4 py-1;
+      @apply font-semibold border border-black rounded-full px-4 py-1;
      }
      .button-yelow {
       @apply bg-primary px-2 py-1 rounded-md font-semibold text-xs;
