@@ -610,7 +610,6 @@ video {
 }
 
 .button-view {
-  margin-top: 0.5rem;
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -921,6 +920,10 @@ video {
   margin-right: -2.5rem;
 }
 
+.-mr-16 {
+  margin-right: -4rem;
+}
+
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -939,6 +942,14 @@ video {
 
 .-mr-32 {
   margin-right: -8rem;
+}
+
+.-mr-4 {
+  margin-right: -1rem;
+}
+
+.-mr-48 {
+  margin-right: -12rem;
 }
 
 .-ms-10 {
@@ -1225,6 +1236,10 @@ video {
   margin-right: 1rem;
 }
 
+.mr-48 {
+  margin-right: 12rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -1375,22 +1390,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.-mr-16 {
-  margin-right: -4rem;
-}
-
-.-mr-4 {
-  margin-right: -1rem;
-}
-
-.-mr-48 {
-  margin-right: -12rem;
-}
-
-.mr-48 {
-  margin-right: 12rem;
 }
 
 .block {
@@ -1601,6 +1600,10 @@ video {
   width: 5rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -1679,10 +1682,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-28 {
-  width: 7rem;
 }
 
 .min-w-4 {
@@ -2756,6 +2755,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline {
   outline-style: solid;
 }
@@ -2773,6 +2778,43 @@ video {
     line-height: 1rem;
     font-weight: 600;
   }
+}
+
+.hover\:bg-sky-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-primary\/50:hover {
+  background-color: rgb(253 196 53 / 0.5);
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-primary\/5:hover {
+  background-color: rgb(253 196 53 / 0.05);
+}
+
+.hover\:bg-yellow-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-yellow-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity, 1));
 }
 
 @media (min-width: 640px) {
@@ -3021,31 +3063,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
-  .lg\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .lg\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .lg\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .lg\:mx-1 {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-
   .lg\:ml-0 {
     margin-left: 0px;
   }
@@ -3072,38 +3089,6 @@ video {
 
   .lg\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .lg\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
-  .lg\:mr-4 {
-    margin-right: 1rem;
-  }
-
-  .lg\:mr-1 {
-    margin-right: 0.25rem;
-  }
-
-  .lg\:-mr-16 {
-    margin-right: -4rem;
-  }
-
-  .lg\:-mr-4 {
-    margin-right: -1rem;
-  }
-
-  .lg\:-mr-48 {
-    margin-right: -12rem;
-  }
-
-  .lg\:mr-48 {
-    margin-right: 12rem;
   }
 
   .lg\:block {
@@ -3136,26 +3121,6 @@ video {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-4\/5 {
-    width: 80%;
-  }
-
-  .lg\:w-28 {
-    width: 7rem;
-  }
-
-  .lg\:w-8 {
-    width: 2rem;
-  }
-
-  .lg\:w-80 {
-    width: 20rem;
-  }
-
-  .lg\:w-96 {
-    width: 24rem;
   }
 
   .lg\:flex-col {
@@ -3209,11 +3174,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .xl\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -3283,15 +3243,6 @@ video {
   .xl\:text-primary {
     --tw-text-opacity: 1;
     color: rgb(253 196 53 / var(--tw-text-opacity, 1));
-  }
-}
-
-@media (min-width: 1024px) {
-  @media (min-width: 1280px) {
-    .lg\:xl\:mx-auto {
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
 }
 
