@@ -1392,6 +1392,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.me-2 {
+  margin-inline-end: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3206,6 +3210,14 @@ video {
     width: 20%;
   }
 
+  .xl\:w-1 {
+    width: 0.25rem;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .xl\:max-w-44 {
     max-width: 11rem;
   }
@@ -3287,6 +3299,10 @@ video {
 
   .\32xl\:w-1\/4 {
     width: 25%;
+  }
+
+  .\32xl\:w-1\/5 {
+    width: 20%;
   }
 }
 
