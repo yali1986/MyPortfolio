@@ -3087,6 +3087,10 @@ video {
     display: none;
   }
 
+  .lg\:h-60 {
+    height: 15rem;
+  }
+
   .lg\:w-1\/3 {
     width: 33.333333%;
   }
