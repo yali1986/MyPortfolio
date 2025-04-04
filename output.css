@@ -1396,6 +1396,10 @@ video {
   margin-inline-end: 0.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
