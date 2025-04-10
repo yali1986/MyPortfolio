@@ -3293,6 +3293,10 @@ video {
     width: 20rem;
   }
 
+  .xl\:w-4\/5 {
+    width: 80%;
+  }
+
   .xl\:max-w-44 {
     max-width: 11rem;
   }
@@ -3388,6 +3392,14 @@ video {
 
   .\32xl\:w-4\/6 {
     width: 66.666667%;
+  }
+
+  .\32xl\:w-1 {
+    width: 0.25rem;
+  }
+
+  .\32xl\:w-1\/2 {
+    width: 50%;
   }
 }
 
