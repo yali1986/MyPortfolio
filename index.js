@@ -1,6 +1,11 @@
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
+function copyEmail() {
+const copy = document.getElementById("copy").textContent
+navigator.clipboard.writeText(copy)
+}
+
 hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('flex');
